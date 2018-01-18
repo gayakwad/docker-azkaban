@@ -1,0 +1,4 @@
+# test2.job
+type=command
+dependencies=test1
+command=echo "I am job test2 !!"
