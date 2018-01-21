@@ -1,0 +1,3 @@
+# testflow.job
+type=flow
+flow.name=wordcount-2

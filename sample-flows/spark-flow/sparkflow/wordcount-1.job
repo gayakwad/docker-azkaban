@@ -1,0 +1,10 @@
+type=command
+command=spark-submit \
+  --master local[2] \
+  --jars $LIBJARS \
+  --class monitoring.spark.job.CountingLocalApp \
+  --executor-cores 2 \
+  --num-executors 2\
+  --executor-memory 512M \
+  --conf spark.serializer=org.apache.spark.serializer.KryoSerializer \
+  --name $name \
